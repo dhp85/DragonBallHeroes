@@ -7,17 +7,25 @@
 
 import UIKit
 
-class HeroesTableViewCell: UITableViewCell {
+final class HeroesTableViewCell: UITableViewCell {
+    // MARK: Identifier
+    
+    static let identifier = String(describing: HeroesTableViewCell.self)
+    
+    // MARK: Outlets
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var labelHeroes: UILabel!
+    @IBOutlet weak var heroesImageView: UIImageView!
+    
+    // MARK: Configuration
+    
+    func configure(with heroe: Heroe) {
+        labelHeroes.text = heroe.rawValue
+        
+        guard let imageURL = heroe.imageURL else {
+            return
+        }
+        heroesImageView.setImage(url: imageURL)
     }
     
 }
