@@ -47,8 +47,17 @@ final class HeroesListTableViewController: UITableViewController {
     
 }
 
+// MARK: - Table View Delegate
+
 extension HeroesListTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let heroe = heroes[indexPath.row]
+        let detailViewController = HeroeDetailViewController(heroe: heroe)
+        navigationController?.show(detailViewController, sender: self)
     }
 }
