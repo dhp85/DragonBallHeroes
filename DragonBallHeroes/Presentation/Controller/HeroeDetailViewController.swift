@@ -25,7 +25,10 @@ final class HeroeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        heroeUILabel.text = heroe.rawValue
+        title = heroeUILabel.text
         configureView()
+        
         
         
     }
