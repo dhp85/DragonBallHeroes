@@ -32,15 +32,35 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UU-X2-cjf">
+                    <rect key="frame" x="16" y="767" width="361" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Transformaciones"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ag-9Ij">
+                    <rect key="frame" x="16" y="367" width="361" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="d8V-Mk-YHf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="pwt-88-kgG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AgM-ga-P1x"/>
+                <constraint firstItem="9UU-X2-cjf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="BOW-Z3-ZEB"/>
+                <constraint firstItem="J4S-ag-9Ij" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="DXG-Tl-rAC"/>
                 <constraint firstItem="RkU-bh-biL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KzA-nL-Hio"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9UU-X2-cjf" secondAttribute="bottom" constant="16" id="Mdf-7y-C5T"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9UU-X2-cjf" secondAttribute="trailing" constant="16" id="T3V-1s-oA2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J4S-ag-9Ij" secondAttribute="trailing" constant="16" id="h5x-pC-VID"/>
                 <constraint firstItem="RkU-bh-biL" firstAttribute="top" secondItem="pwt-88-kgG" secondAttribute="bottom" constant="32" id="oSX-kx-0AC"/>
                 <constraint firstItem="pwt-88-kgG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uOu-Vm-M8z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pwt-88-kgG" secondAttribute="trailing" id="uTc-TA-zxk"/>
+                <constraint firstItem="9UU-X2-cjf" firstAttribute="top" secondItem="J4S-ag-9Ij" secondAttribute="bottom" constant="200" id="wfU-my-a1R"/>
             </constraints>
             <point key="canvasLocation" x="49.618320610687022" y="-11.267605633802818"/>
         </view>
