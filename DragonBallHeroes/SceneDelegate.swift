@@ -18,10 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
+    
         
-        let heroesListViewController = HeroesListTableViewController()
+        let loginViewController = LoginViewController()
         
-        let navigationController = UINavigationController(rootViewController: heroesListViewController)
+        let navigationController = UINavigationController(rootViewController: loginViewController)
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

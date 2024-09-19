@@ -105,10 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				F7C261B92C9816F4006D8289 /* HeroesTableViewCell.xib */,
-				F7C261B82C9816F4006D8289 /* HeroesTableViewCell.swift */,
 				F7C261BF2C9819CB006D8289 /* HeroesListTableViewController.xib */,
 				F738135D2C988510008717D5 /* LoginViewController.xib */,
-				F738135C2C988510008717D5 /* LoginViewController.swift */,
 				F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */,
 			);
 			path = View;
@@ -117,8 +115,10 @@
 		F7C261B42C98155E006D8289 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F738135C2C988510008717D5 /* LoginViewController.swift */,
 				F7C261BE2C9819CB006D8289 /* HeroesListTableViewController.swift */,
 				F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */,
+				F7C261B82C9816F4006D8289 /* HeroesTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
