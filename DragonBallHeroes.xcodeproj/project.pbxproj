@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7201D1D2C9C6BF5001AE95B /* TransforamationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */; };
+		F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */; };
+		F7201D202C9C6CC5001AE95B /* TransformationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */; };
+		F7201D232C9C769B001AE95B /* TransforamationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */; };
+		F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */; };
 		F738135E2C988510008717D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738135C2C988510008717D5 /* LoginViewController.swift */; };
 		F738135F2C988510008717D5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F738135D2C988510008717D5 /* LoginViewController.xib */; };
 		F79EDBCD2C99714A00C8A78A /* HeroeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforamationsTableViewController.swift; sourceTree = "<group>"; };
+		F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewController.xib; sourceTree = "<group>"; };
+		F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsModel.swift; sourceTree = "<group>"; };
+		F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforamationsTableViewCell.swift; sourceTree = "<group>"; };
+		F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewCell.xib; sourceTree = "<group>"; };
 		F738135C2C988510008717D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F738135D2C988510008717D5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +118,10 @@
 				F7C261BF2C9819CB006D8289 /* HeroesListTableViewController.xib */,
 				F738135D2C988510008717D5 /* LoginViewController.xib */,
 				F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */,
+				F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */,
+				F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */,
+				F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */,
+				F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				F7C261B62C9816A9006D8289 /* Heroe.swift */,
+				F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,10 +204,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7201D232C9C769B001AE95B /* TransforamationsTableViewCell.xib in Resources */,
 				F7C261A72C981501006D8289 /* Assets.xcassets in Resources */,
 				F7C261C02C9819CB006D8289 /* HeroesListTableViewController.xib in Resources */,
 				F738135F2C988510008717D5 /* LoginViewController.xib in Resources */,
 				F79EDBCD2C99714A00C8A78A /* HeroeDetailViewController.xib in Resources */,
+				F7201D1D2C9C6BF5001AE95B /* TransforamationsTableViewController.xib in Resources */,
 				F7C261BA2C9816F4006D8289 /* HeroesTableViewCell.xib in Resources */,
 				F7C261AA2C981501006D8289 /* Base in Resources */,
 			);
@@ -206,10 +223,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C2619E2C981500006D8289 /* AppDelegate.swift in Sources */,
+				F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */,
+				F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */,
 				F7C261BB2C9816F4006D8289 /* HeroesTableViewCell.swift in Sources */,
 				F7C261A02C981500006D8289 /* SceneDelegate.swift in Sources */,
 				F7C261B72C9816A9006D8289 /* Heroe.swift in Sources */,
 				F738135E2C988510008717D5 /* LoginViewController.swift in Sources */,
+				F7201D202C9C6CC5001AE95B /* TransformationsModel.swift in Sources */,
 				F7C261BD2C981963006D8289 /* UIImageView+Remote.swift in Sources */,
 				F7C261C12C9819CB006D8289 /* HeroesListTableViewController.swift in Sources */,
 				F79EDBCE2C99714A00C8A78A /* HeroeDetailViewController.swift in Sources */,

@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="heroeImageView" destination="pwt-88-kgG" id="d3b-o0-yKk"/>
                 <outlet property="heroeUILabel" destination="RkU-bh-biL" id="5GM-A8-25p"/>
+                <outlet property="nameTransformationUIButton" destination="9UU-X2-cjf" id="BL6-BV-D7T"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,7 +36,10 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UU-X2-cjf">
                     <rect key="frame" x="16" y="767" width="361" height="35"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Transformaciones"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    <connections>
+                        <action selector="pushTranformationButton:" destination="-1" eventType="touchUpInside" id="ewn-ji-gFO"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ag-9Ij">
                     <rect key="frame" x="16" y="367" width="361" height="200"/>
