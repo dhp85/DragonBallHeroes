@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroeDetailViewController" customModule="DragonBallHeroes" customModuleProvider="target">
             <connections>
+                <outlet property="characterLabelUILabel" destination="J4S-ag-9Ij" id="zSc-ku-jwr"/>
                 <outlet property="heroeImageView" destination="pwt-88-kgG" id="d3b-o0-yKk"/>
                 <outlet property="heroeUILabel" destination="RkU-bh-biL" id="5GM-A8-25p"/>
                 <outlet property="nameTransformationUIButton" destination="9UU-X2-cjf" id="BL6-BV-D7T"/>

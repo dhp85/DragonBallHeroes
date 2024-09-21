@@ -11,6 +11,7 @@ final class HeroeDetailViewController: UIViewController {
     @IBOutlet weak var heroeImageView: UIImageView!
     @IBOutlet weak var nameTransformationUIButton: UIButton!
     @IBOutlet weak var heroeUILabel: UILabel!
+    @IBOutlet weak var characterLabelUILabel: UILabel!
     
     @IBAction func pushTranformationButton(_ sender: Any) {
         let transformationtableViewController = TransformationsTableViewController(nibName: "TransforamationsTableViewController", bundle: nil)
@@ -48,6 +49,7 @@ final class HeroeDetailViewController: UIViewController {
 private extension HeroeDetailViewController {
     func configureView() {
         heroeUILabel.text = heroe.rawValue
+        characterLabelUILabel.text = heroe.character
         nameTransformationUIButton.setTitle("Transformaciones", for: .normal)
         
         guard let imageURL = heroe.imageURL else {

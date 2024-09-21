@@ -14,6 +14,8 @@
 		F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */; };
 		F738135E2C988510008717D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738135C2C988510008717D5 /* LoginViewController.swift */; };
 		F738135F2C988510008717D5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F738135D2C988510008717D5 /* LoginViewController.xib */; };
+		F77FE5DB2C9EC5D100ED297D /* TransformationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */; };
+		F77FE5DC2C9EC5D100ED297D /* TransformationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77FE5DA2C9EC5D100ED297D /* TransformationDetailViewController.xib */; };
 		F79EDBCD2C99714A00C8A78A /* HeroeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */; };
 		F79EDBCE2C99714A00C8A78A /* HeroeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */; };
 		F7C2619E2C981500006D8289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2619D2C981500006D8289 /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 		F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewCell.xib; sourceTree = "<group>"; };
 		F738135C2C988510008717D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F738135D2C988510008717D5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationDetailViewController.swift; sourceTree = "<group>"; };
+		F77FE5DA2C9EC5D100ED297D /* TransformationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationDetailViewController.xib; sourceTree = "<group>"; };
 		F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailViewController.swift; sourceTree = "<group>"; };
 		F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroeDetailViewController.xib; sourceTree = "<group>"; };
 		F7C2619A2C981500006D8289 /* DragonBallHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,13 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				F7C261B92C9816F4006D8289 /* HeroesTableViewCell.xib */,
+				F7C261B82C9816F4006D8289 /* HeroesTableViewCell.swift */,
 				F7C261BF2C9819CB006D8289 /* HeroesListTableViewController.xib */,
 				F738135D2C988510008717D5 /* LoginViewController.xib */,
 				F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */,
-				F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */,
 				F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */,
 				F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */,
 				F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */,
+				F77FE5DA2C9EC5D100ED297D /* TransformationDetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,10 +134,11 @@
 		F7C261B42C98155E006D8289 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */,
 				F738135C2C988510008717D5 /* LoginViewController.swift */,
+				F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */,
 				F7C261BE2C9819CB006D8289 /* HeroesListTableViewController.swift */,
 				F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */,
-				F7C261B82C9816F4006D8289 /* HeroesTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7201D232C9C769B001AE95B /* TransforamationsTableViewCell.xib in Resources */,
+				F77FE5DC2C9EC5D100ED297D /* TransformationDetailViewController.xib in Resources */,
 				F7C261A72C981501006D8289 /* Assets.xcassets in Resources */,
 				F7C261C02C9819CB006D8289 /* HeroesListTableViewController.xib in Resources */,
 				F738135F2C988510008717D5 /* LoginViewController.xib in Resources */,
@@ -230,6 +237,7 @@
 				F7C261B72C9816A9006D8289 /* Heroe.swift in Sources */,
 				F738135E2C988510008717D5 /* LoginViewController.swift in Sources */,
 				F7201D202C9C6CC5001AE95B /* TransformationsModel.swift in Sources */,
+				F77FE5DB2C9EC5D100ED297D /* TransformationDetailViewController.swift in Sources */,
 				F7C261BD2C981963006D8289 /* UIImageView+Remote.swift in Sources */,
 				F7C261C12C9819CB006D8289 /* HeroesListTableViewController.swift in Sources */,
 				F79EDBCE2C99714A00C8A78A /* HeroeDetailViewController.swift in Sources */,
