@@ -33,8 +33,6 @@ final class HeroeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        heroeUILabel.text = heroe.rawValue
-        title = heroeUILabel.text
         configureView()
         
         
@@ -49,6 +47,7 @@ final class HeroeDetailViewController: UIViewController {
 private extension HeroeDetailViewController {
     func configureView() {
         heroeUILabel.text = heroe.rawValue
+        title = heroeUILabel.text
         characterLabelUILabel.text = heroe.character
         nameTransformationUIButton.setTitle("Transformaciones", for: .normal)
         

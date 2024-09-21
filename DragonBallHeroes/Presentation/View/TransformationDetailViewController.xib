@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransformationDetailViewController" customModule="DragonBallHeroes" customModuleProvider="target">
             <connections>
+                <outlet property="characterTransformationUILabel" destination="Epf-69-WjA" id="5lb-mX-YCu"/>
+                <outlet property="nameTransformationUILabel" destination="Wup-yV-01j" id="nOE-9O-seh"/>
+                <outlet property="transformationDetailUIImageView" destination="CU1-DG-PEv" id="9QI-fY-fez"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,17 +28,17 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-yV-01j">
-                    <rect key="frame" x="16" y="311" width="56" height="15"/>
+                    <rect key="frame" x="16" y="311" width="56" height="26.333333333333314"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epf-69-WjA">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epf-69-WjA">
                     <rect key="frame" x="16" y="390" width="361" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="YlV-eP-fTd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -46,7 +49,6 @@
                 <constraint firstItem="Epf-69-WjA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="1f3-u0-z4W"/>
                 <constraint firstItem="CU1-DG-PEv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1ts-xq-EqN"/>
                 <constraint firstItem="Wup-yV-01j" firstAttribute="top" secondItem="CU1-DG-PEv" secondAttribute="bottom" constant="32" id="35M-4t-X7F"/>
-                <constraint firstItem="Epf-69-WjA" firstAttribute="top" secondItem="Wup-yV-01j" secondAttribute="bottom" constant="64" id="8zD-v0-k0B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Epf-69-WjA" secondAttribute="bottom" constant="300" id="OBx-ga-VMp"/>
                 <constraint firstItem="CU1-DG-PEv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Tal-P9-8BG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Epf-69-WjA" secondAttribute="trailing" constant="16" id="b7G-by-4a5"/>

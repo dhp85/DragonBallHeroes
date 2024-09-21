@@ -14,6 +14,7 @@
 		F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */; };
 		F738135E2C988510008717D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738135C2C988510008717D5 /* LoginViewController.swift */; };
 		F738135F2C988510008717D5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F738135D2C988510008717D5 /* LoginViewController.xib */; };
+		F749DCCA2C9F2E2200D8F880 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F749DCC92C9F2E2200D8F880 /* Login.swift */; };
 		F77FE5DB2C9EC5D100ED297D /* TransformationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */; };
 		F77FE5DC2C9EC5D100ED297D /* TransformationDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77FE5DA2C9EC5D100ED297D /* TransformationDetailViewController.xib */; };
 		F79EDBCD2C99714A00C8A78A /* HeroeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79EDBCC2C99714A00C8A78A /* HeroeDetailViewController.xib */; };
@@ -38,6 +39,7 @@
 		F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewCell.xib; sourceTree = "<group>"; };
 		F738135C2C988510008717D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F738135D2C988510008717D5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F749DCC92C9F2E2200D8F880 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationDetailViewController.swift; sourceTree = "<group>"; };
 		F77FE5DA2C9EC5D100ED297D /* TransformationDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformationDetailViewController.xib; sourceTree = "<group>"; };
 		F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				F7C261B62C9816A9006D8289 /* Heroe.swift */,
 				F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */,
+				F749DCC92C9F2E2200D8F880 /* Login.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			files = (
 				F7C2619E2C981500006D8289 /* AppDelegate.swift in Sources */,
 				F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */,
+				F749DCCA2C9F2E2200D8F880 /* Login.swift in Sources */,
 				F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */,
 				F7C261BB2C9816F4006D8289 /* HeroesTableViewCell.swift in Sources */,
 				F7C261A02C981500006D8289 /* SceneDelegate.swift in Sources */,
@@ -388,8 +392,8 @@
 				INFOPLIST_FILE = DragonBallHeroes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,8 +418,8 @@
 				INFOPLIST_FILE = DragonBallHeroes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

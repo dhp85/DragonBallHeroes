@@ -54,12 +54,10 @@ extension TransformationsTableViewController {
         100
     }
     
-    /* override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      let transformation = transformations[indexPath.row]
-     let detailtransformationViewController = TransformationDetailViewController(transformation: transformation)
+        let detailtransformationViewController = TransformationDetailViewController(transformations: transformation)
      navigationController?.show(detailtransformationViewController, sender: self)
-     }*/
-    
-    
+     }
     
 }
