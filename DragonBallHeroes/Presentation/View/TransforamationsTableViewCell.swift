@@ -15,10 +15,14 @@ final class TransforamationsTableViewCell: UITableViewCell {
     @IBOutlet weak var labelcell: UILabel!
     @IBOutlet weak var imageCellImageView: UIImageView!
     
+    @IBOutlet weak var simbolNextUILabel: UILabel!
+    @IBOutlet weak var characterUILabel: UILabel!
     // MARK: Configuration
     
     func configure(with transformation: Transformations) {
         labelcell.text = transformation.rawValue
+        characterUILabel.text = transformation.character
+        simbolNextUILabel.text = String(describing: ">")
         
         guard let imageURL = transformation.imageURL else {
             return

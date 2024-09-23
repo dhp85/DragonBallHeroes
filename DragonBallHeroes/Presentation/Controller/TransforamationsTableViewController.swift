@@ -51,8 +51,7 @@ final class TransformationsTableViewController: UITableViewController {
 
 extension TransformationsTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
-    }
+        100   }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
      let transformation = transformations[indexPath.row]

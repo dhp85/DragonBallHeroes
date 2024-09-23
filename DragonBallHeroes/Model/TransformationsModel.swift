@@ -33,7 +33,7 @@ extension Transformations {
     var character: String {
         switch self {
         case .gokuSuperSaiyan:
-            String(describing: "Goku multiplica su poder x 1.000.000")
+            String(describing: "Goku multiplica su poder x 1.000.000 se le pone el pelo amarillo, los ojos azules y la dureza de sus musculos se hacen mas duros que el diamante")
         case.gokuSuperSaiyan2:
             String(describing: "Goku multiplica su poder x 10.000.000")
         case .gokuSuperSaiyan3:
