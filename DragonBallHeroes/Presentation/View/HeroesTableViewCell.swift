@@ -21,12 +21,12 @@ final class HeroesTableViewCell: UITableViewCell {
     
     // MARK: Configuration
     
-    func configure(with heroe: Heroe) {
-        labelHeroes.text = heroe.rawValue
-        characterHeroeUILabel.text = heroe.character
+    func configure(with heroe: DragonBallCharacter) {
+        labelHeroes.text = heroe.name
+        characterHeroeUILabel.text = heroe.description
         nextViewUILabel.text = String(describing: ">")
         
-        guard let imageURL = heroe.imageURL else {
+        guard let imageURL = heroe.photo else {
             return
         }
         heroesImageView.setImage(url: imageURL)

@@ -25,11 +25,11 @@ extension UIImageView {
     private func downloadWithURLSession(url: URL, completion: @escaping (UIImage?) -> Void) {
         
         URLSession.shared.dataTask(with: URLRequest(url: url)) {data, _, _ in
-            guard let data, let image = UIImage(data: data) else {
+            guard let data, let photo = UIImage(data: data) else {
                 completion(nil)
                 return
             }
-            completion(image)
+            completion(photo)
         }
         .resume()
     }

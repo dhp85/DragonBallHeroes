@@ -9,19 +9,28 @@ import UIKit
 
 final class HeroesListTableViewController: UITableViewController {
     
-    // MARK: Table View Data Source
+    // MARK: - Table View Data Source
     
-    typealias DataSource = UITableViewDiffableDataSource<Int, Heroe>
-    typealias SnapShot = NSDiffableDataSourceSnapshot<Int, Heroe>
+    typealias DataSource = UITableViewDiffableDataSource<Int, DragonBallCharacter>
+    typealias SnapShot = NSDiffableDataSourceSnapshot<Int, DragonBallCharacter>
     
-    //MARK: Model
+    //MARK: - Model
     
-    private let heroes: [Heroe] = Heroe.allCases
-    
-    
+    private let networkModel: NetworkModel
     private var dataSource: DataSource?
-        
     
+    //MARK: - Inizializers
+    init(networkModel: NetworkModel = .shared) {
+        self.networkModel = networkModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,22 +38,31 @@ final class HeroesListTableViewController: UITableViewController {
         
         tableView.register(UINib(nibName: HeroesTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: HeroesTableViewCell.identifier)
         
-        dataSource = DataSource(tableView: tableView) {tableView, indexPath, heroe in
+        dataSource = DataSource(tableView: tableView) {tableView, indexPath, character in
             
             guard let cell = tableView.dequeueReusableCell(withIdentifier: HeroesTableViewCell.identifier, for: indexPath) as?
                     HeroesTableViewCell else {
                 return UITableViewCell()
             }
-            cell.configure(with: heroe)
+            cell.configure(with: character)
             return cell
         }
         tableView.dataSource = dataSource
         var snapshot = SnapShot()
         snapshot.appendSections([0])
-        snapshot.appendItems(heroes)
-        dataSource?.apply(snapshot)
         
-
+        networkModel.getHeroes { [weak self] result in
+            switch result {
+            case let .success(characters):
+                snapshot.appendItems(characters)
+                self?.dataSource?.apply(snapshot)
+            case .failure:
+                break
+            }
+        }
+        
+        
+        
     }
     
 }
@@ -57,9 +75,11 @@ extension HeroesListTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let heroe = heroes[indexPath.row]
-        let detailViewController = HeroeDetailViewController(heroe: heroe)
-        navigationController?.pushViewController(detailViewController, animated: true)
+     
+        if let character = dataSource?.itemIdentifier(for: indexPath) {
+            let detailViewController = HeroeDetailViewController(heroe: character)
+            navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
+    
 }

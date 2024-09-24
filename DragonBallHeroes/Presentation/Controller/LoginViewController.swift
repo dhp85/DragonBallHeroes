@@ -13,6 +13,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var wallpaperLoginUIImageView: UIImageView!
     @IBOutlet weak var emailUserUITextField: UITextField!
     
+ 
     @IBAction func loginButtonTapped(_ sender: Any) {
         guard let email = emailUserUITextField.text, !email.isEmpty else {
             return
@@ -30,7 +31,7 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
- 
+        
     }
 
 }
@@ -47,6 +48,8 @@ private extension LoginViewController {
         
         
     }
+    
+// MARK: - Login and Navigation
     
     func login(email: String, password: String) {
         

@@ -19,9 +19,9 @@ final class HeroeDetailViewController: UIViewController {
         self.navigationController?.pushViewController(transformationtableViewController, animated: true)
         
     }
-    private let heroe: Heroe
+    private let heroe: DragonBallCharacter
     
-    init(heroe: Heroe) {
+    init(heroe: DragonBallCharacter) {
         self.heroe = heroe
         super.init(nibName: nil, bundle: nil)
     }
@@ -46,12 +46,12 @@ final class HeroeDetailViewController: UIViewController {
 
 private extension HeroeDetailViewController {
     func configureView() {
-        heroeUILabel.text = heroe.rawValue
+        heroeUILabel.text = heroe.name
         title = heroeUILabel.text
-        characterLabelUILabel.text = heroe.character
+        characterLabelUILabel.text = heroe.description
         nameTransformationUIButton.setTitle("Transformaciones", for: .normal)
         
-        guard let imageURL = heroe.imageURL else {
+        guard let imageURL = heroe.photo else {
             return
         }
         

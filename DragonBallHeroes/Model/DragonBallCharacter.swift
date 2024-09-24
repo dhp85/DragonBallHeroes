@@ -10,7 +10,7 @@ import Foundation
 
 struct DragonBallCharacter: Codable, Hashable {
     let name : String
-    let photo : String
+    let photo : URL?
     let description : String
     let favorite: Bool
     let id: String
