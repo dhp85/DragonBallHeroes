@@ -18,8 +18,9 @@ final class HeroesListTableViewController: UITableViewController {
     
     private let heroes: [Heroe] = Heroe.allCases
     
-    private var dataSource: DataSource?
     
+    private var dataSource: DataSource?
+        
     
     
     override func viewDidLoad() {
@@ -43,6 +44,7 @@ final class HeroesListTableViewController: UITableViewController {
         snapshot.appendItems(heroes)
         dataSource?.apply(snapshot)
         
+
     }
     
 }
@@ -58,6 +60,6 @@ extension HeroesListTableViewController {
         
         let heroe = heroes[indexPath.row]
         let detailViewController = HeroeDetailViewController(heroe: heroe)
-        navigationController?.show(detailViewController, sender: self)
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

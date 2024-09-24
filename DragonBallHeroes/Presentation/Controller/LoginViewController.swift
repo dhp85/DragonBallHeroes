@@ -13,12 +13,20 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var wallpaperLoginUIImageView: UIImageView!
     @IBOutlet weak var emailUserUITextField: UITextField!
     
-    @IBAction func tabButtonLogin(_ sender: Any) {
-        let heroesTableViewController = HeroesListTableViewController(nibName: "HeroesListTableViewController", bundle: nil)
+    @IBAction func loginButtonTapped(_ sender: Any) {
+        guard let email = emailUserUITextField.text, !email.isEmpty else {
+            return
+        }
         
-        self.navigationController?.pushViewController(heroesTableViewController, animated: true)
+        guard let password = passwordUserUITextField.text, !password.isEmpty else{
+            return
+        }
+        
+        login(email: email, password: password)
+        
         
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
@@ -39,5 +47,33 @@ private extension LoginViewController {
         
         
     }
-          
+    
+    func login(email: String, password: String) {
+        
+        NetworkModel.shared.login(user: email, password: password) { [weak self] result in
+            
+            switch result {
+            case let .success(token):
+                UserDefaults.standard.set(token, forKey: "authToken")
+                self?.navigateMainViewController()
+            case .failure:
+                break
+            }
+        }
+    }
+    
+    func navigateMainViewController() {
+        
+            DispatchQueue.main.async {
+            
+            if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+                let heroesListViewController = HeroesListTableViewController()
+                let navigationController = UINavigationController(rootViewController: heroesListViewController)
+                scene.changeRootViewController(to: navigationController)
+            }
+            
+        }
+    }
 }
+
+

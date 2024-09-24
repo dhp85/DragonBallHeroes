@@ -8,15 +8,16 @@
 import UIKit
 
 final class TransforamationsTableViewCell: UITableViewCell {
+    
     //MARK: Identifier
     static let identifier = String(describing: TransforamationsTableViewCell.self)
     
     // MARK: Outlets
     @IBOutlet weak var labelcell: UILabel!
     @IBOutlet weak var imageCellImageView: UIImageView!
-    
     @IBOutlet weak var simbolNextUILabel: UILabel!
     @IBOutlet weak var characterUILabel: UILabel!
+    
     // MARK: Configuration
     
     func configure(with transformation: Transformations) {

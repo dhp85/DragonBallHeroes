@@ -16,11 +16,15 @@ final class HeroesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelHeroes: UILabel!
     @IBOutlet weak var heroesImageView: UIImageView!
+    @IBOutlet weak var characterHeroeUILabel: UILabel!
+    @IBOutlet weak var nextViewUILabel: UILabel!
     
     // MARK: Configuration
     
     func configure(with heroe: Heroe) {
         labelHeroes.text = heroe.rawValue
+        characterHeroeUILabel.text = heroe.character
+        nextViewUILabel.text = String(describing: ">")
         
         guard let imageURL = heroe.imageURL else {
             return

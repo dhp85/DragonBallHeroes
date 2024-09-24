@@ -70,7 +70,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Button"/>
                     <connections>
-                        <action selector="tabButtonLogin:" destination="-1" eventType="touchUpInside" id="rqJ-09-5u2"/>
+                        <action selector="loginButtonTapped:" destination="-1" eventType="touchUpInside" id="emH-9D-8c0"/>
                     </connections>
                 </button>
             </subviews>

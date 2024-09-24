@@ -18,7 +18,7 @@ extension Heroe {
     var imageURL: URL? {
         switch self {
         case .goku:
-            URL(string: "https://static.wikia.nocookie.net/dragonball/images/c/c0/Son_Goku_en_Super_Hero.png/revision/latest?cb=20220302091733&path-prefix=es")
+            URL(string: "https://static.wikia.nocookie.net/dragonball/images/2/2e/Goku_Joven_Flashback.jpg/revision/latest/scale-to-width-down/1000?cb=20170809015919&path-prefix=es")
         case .vegeta:
             URL(string: "https://static.wikia.nocookie.net/dragonball/images/1/14/Vegeta_en_Super_Hero.png/revision/latest?cb=20220119211034&path-prefix=es")
         case .freezer:
