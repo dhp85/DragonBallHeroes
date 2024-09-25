@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct Transformation: Codable {
+struct Transformation: Codable, Hashable {
     let id: String
-    let photo: String
+    let photo: URL?
     let name: String
     let description: String
 }

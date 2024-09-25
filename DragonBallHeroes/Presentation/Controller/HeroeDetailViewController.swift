@@ -14,10 +14,17 @@ final class HeroeDetailViewController: UIViewController {
     @IBOutlet weak var characterLabelUILabel: UILabel!
     
     @IBAction func pushTranformationButton(_ sender: Any) {
-        let transformationtableViewController = TransformationsTableViewController(nibName: "TransforamationsTableViewController", bundle: nil)
-        
-        self.navigationController?.pushViewController(transformationtableViewController, animated: true)
-        
+        NetworkModel.shared.getTransformations(for: heroe) { result in
+            switch result {
+            case let .success(transformations):
+                DispatchQueue.main.async {
+                    let transformationListViewController = TransformationsTableViewController(someTransformation: transformations)
+                    self.navigationController?.pushViewController(transformationListViewController, animated: true)
+                }
+            case.failure:
+                break
+            }
+        }
     }
     private let heroe: DragonBallCharacter
     
@@ -42,7 +49,7 @@ final class HeroeDetailViewController: UIViewController {
     
 }
 
-// MARK: View Configuration
+// MARK: - View Configuration
 
 private extension HeroeDetailViewController {
     func configureView() {

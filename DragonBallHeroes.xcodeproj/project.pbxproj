@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F7201D1D2C9C6BF5001AE95B /* TransforamationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */; };
 		F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */; };
-		F7201D202C9C6CC5001AE95B /* TransformationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */; };
 		F7201D232C9C769B001AE95B /* TransforamationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */; };
 		F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */; };
 		F738135E2C988510008717D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738135C2C988510008717D5 /* LoginViewController.swift */; };
@@ -25,7 +24,6 @@
 		F7C261A02C981500006D8289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2619F2C981500006D8289 /* SceneDelegate.swift */; };
 		F7C261A72C981501006D8289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C261A62C981501006D8289 /* Assets.xcassets */; };
 		F7C261AA2C981501006D8289 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7C261A92C981501006D8289 /* Base */; };
-		F7C261B72C9816A9006D8289 /* Heroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C261B62C9816A9006D8289 /* Heroe.swift */; };
 		F7C261BA2C9816F4006D8289 /* HeroesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7C261B92C9816F4006D8289 /* HeroesTableViewCell.xib */; };
 		F7C261BB2C9816F4006D8289 /* HeroesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C261B82C9816F4006D8289 /* HeroesTableViewCell.swift */; };
 		F7C261BD2C981963006D8289 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C261BC2C981963006D8289 /* UIImageView+Remote.swift */; };
@@ -37,7 +35,6 @@
 /* Begin PBXFileReference section */
 		F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforamationsTableViewController.swift; sourceTree = "<group>"; };
 		F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewController.xib; sourceTree = "<group>"; };
-		F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsModel.swift; sourceTree = "<group>"; };
 		F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforamationsTableViewCell.swift; sourceTree = "<group>"; };
 		F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewCell.xib; sourceTree = "<group>"; };
 		F738135C2C988510008717D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +52,6 @@
 		F7C261A62C981501006D8289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7C261A92C981501006D8289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7C261AB2C981501006D8289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7C261B62C9816A9006D8289 /* Heroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroe.swift; sourceTree = "<group>"; };
 		F7C261B82C9816F4006D8289 /* HeroesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTableViewCell.swift; sourceTree = "<group>"; };
 		F7C261B92C9816F4006D8289 /* HeroesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesTableViewCell.xib; sourceTree = "<group>"; };
 		F7C261BC2C981963006D8289 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
@@ -142,11 +138,11 @@
 		F7C261B42C98155E006D8289 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */,
 				F738135C2C988510008717D5 /* LoginViewController.swift */,
-				F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */,
 				F7C261BE2C9819CB006D8289 /* HeroesListTableViewController.swift */,
 				F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */,
+				F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */,
+				F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,8 +150,6 @@
 		F7C261B52C981576006D8289 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F7C261B62C9816A9006D8289 /* Heroe.swift */,
-				F7201D1F2C9C6CC5001AE95B /* TransformationsModel.swift */,
 				F7B47F7E2CA1BE840076FF8F /* DragonBallCharacter.swift */,
 				F7B47F802CA1BF370076FF8F /* NetworkModel.swift */,
 				F7B47F822CA1C1730076FF8F /* APIClient.swift */,
@@ -249,9 +243,7 @@
 				F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */,
 				F7C261BB2C9816F4006D8289 /* HeroesTableViewCell.swift in Sources */,
 				F7C261A02C981500006D8289 /* SceneDelegate.swift in Sources */,
-				F7C261B72C9816A9006D8289 /* Heroe.swift in Sources */,
 				F738135E2C988510008717D5 /* LoginViewController.swift in Sources */,
-				F7201D202C9C6CC5001AE95B /* TransformationsModel.swift in Sources */,
 				F77FE5DB2C9EC5D100ED297D /* TransformationDetailViewController.swift in Sources */,
 				F7E232972CA29FB2003F9AE2 /* Transformation.swift in Sources */,
 				F7C261BD2C981963006D8289 /* UIImageView+Remote.swift in Sources */,

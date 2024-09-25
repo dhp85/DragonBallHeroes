@@ -13,9 +13,9 @@ final class TransformationDetailViewController: UIViewController {
     @IBOutlet weak var nameTransformationUILabel: UILabel!
     @IBOutlet weak var transformationDetailUIImageView: UIImageView!
     
-    private let transformations : Transformations
+    private let transformations : Transformation
     
-    init(transformations : Transformations) {
+    init(transformations : Transformation) {
         self.transformations = transformations
         super.init(nibName: nil, bundle: nil)
     }
@@ -36,11 +36,11 @@ final class TransformationDetailViewController: UIViewController {
 extension TransformationDetailViewController {
     
     func configure() {
-        characterTransformationUILabel.text = transformations.character
-        nameTransformationUILabel.text = transformations.rawValue
+        characterTransformationUILabel.text = transformations.description
+        nameTransformationUILabel.text = transformations.name
         title = nameTransformationUILabel.text
         
-        guard let imageURL = transformations.imageURL else {
+        guard let imageURL = transformations.photo else {
             return
         }
         

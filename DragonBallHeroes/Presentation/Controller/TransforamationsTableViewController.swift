@@ -11,16 +11,30 @@ final class TransformationsTableViewController: UITableViewController {
     
     // MARK: Table View Data Source
     
-    typealias DataSource = UITableViewDiffableDataSource<Int, Transformations>
+    typealias DataSource = UITableViewDiffableDataSource<Int, Transformation>
     
-    typealias SnapShot = NSDiffableDataSourceSnapshot<Int, Transformations>
     
-    // MARK: Model
+    typealias SnapShot = NSDiffableDataSourceSnapshot<Int, Transformation>
     
-    private let transformations: [Transformations] = Transformations.allCases
-    
+    // MARK: - Model
+    private let someTransformation: [Transformation]
+    private let networkModel: NetworkModel
     private var dataSource: DataSource?
-        
+    
+    // MARK: - Inizializers
+    init(someTransformation : [Transformation],networkModel: NetworkModel = .shared) {
+        self.networkModel = networkModel
+        self.someTransformation = someTransformation
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+   // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Transformaciones"
@@ -39,13 +53,12 @@ final class TransformationsTableViewController: UITableViewController {
         tableView.dataSource = dataSource
         var snapshot = SnapShot()
         snapshot.appendSections([0])
-        snapshot.appendItems(transformations)
-        dataSource?.apply(snapshot)
+        snapshot.appendItems(someTransformation)
+        self.dataSource?.apply(snapshot)
+            
+            }
+        }
 
-    }
-
-    
-}
 
 // MARK: - Table View Delete
 
@@ -54,9 +67,11 @@ extension TransformationsTableViewController {
         100   }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     let transformation = transformations[indexPath.row]
-        let detailtransformationViewController = TransformationDetailViewController(transformations: transformation)
-     navigationController?.show(detailtransformationViewController, sender: self)
+     
+        if let character = dataSource?.itemIdentifier(for: indexPath) {
+            let detailViewController = TransformationDetailViewController(transformations: character)
+            navigationController?.pushViewController(detailViewController, animated: true)
+        }
      }
     
 }
