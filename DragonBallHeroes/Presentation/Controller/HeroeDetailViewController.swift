@@ -17,8 +17,9 @@ final class HeroeDetailViewController: UIViewController {
         NetworkModel.shared.getTransformations(for: heroe) { result in
             switch result {
             case let .success(transformations):
+                let sortedTransformations = transformations.sorted { $0.name < $1.name}
                 DispatchQueue.main.async {
-                    let transformationListViewController = TransformationsTableViewController(someTransformation: transformations)
+                    let transformationListViewController = TransformationsTableViewController(someTransformation: sortedTransformations)
                     self.navigationController?.pushViewController(transformationListViewController, animated: true)
                 }
             case.failure:

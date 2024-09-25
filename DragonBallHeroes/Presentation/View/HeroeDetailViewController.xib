@@ -42,10 +42,10 @@
                         <action selector="pushTranformationButton:" destination="-1" eventType="touchUpInside" id="ewn-ji-gFO"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ag-9Ij">
-                    <rect key="frame" x="16" y="354" width="361" height="383"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4S-ag-9Ij">
+                    <rect key="frame" x="16" y="359.33333333333331" width="361" height="153.99999999999994"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="383" id="d8V-Mk-YHf"/>
+                        <constraint firstAttribute="height" constant="154" id="d8V-Mk-YHf"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <nil key="textColor"/>
@@ -61,11 +61,11 @@
                 <constraint firstItem="RkU-bh-biL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KzA-nL-Hio"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9UU-X2-cjf" secondAttribute="trailing" constant="16" id="T3V-1s-oA2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9UU-X2-cjf" secondAttribute="bottom" constant="16" id="ae7-rW-Ley"/>
+                <constraint firstItem="J4S-ag-9Ij" firstAttribute="top" secondItem="RkU-bh-biL" secondAttribute="bottom" constant="22" id="duW-dZ-QHH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J4S-ag-9Ij" secondAttribute="trailing" constant="16" id="h5x-pC-VID"/>
                 <constraint firstItem="RkU-bh-biL" firstAttribute="top" secondItem="pwt-88-kgG" secondAttribute="bottom" constant="32" id="oSX-kx-0AC"/>
                 <constraint firstItem="pwt-88-kgG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="uOu-Vm-M8z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pwt-88-kgG" secondAttribute="trailing" id="uTc-TA-zxk"/>
-                <constraint firstItem="9UU-X2-cjf" firstAttribute="top" secondItem="J4S-ag-9Ij" secondAttribute="bottom" constant="30" id="wfU-my-a1R"/>
             </constraints>
             <point key="canvasLocation" x="49.618320610687022" y="-11.267605633802818"/>
         </view>
