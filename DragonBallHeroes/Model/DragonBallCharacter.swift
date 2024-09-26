@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct DragonBallCharacter: Codable, Hashable {
+struct DragonBallCharacter: Codable, Hashable, Equatable {
     let name : String
     let photo : URL?
     let description : String

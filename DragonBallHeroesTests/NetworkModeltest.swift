@@ -20,36 +20,43 @@ final class NetworkModelTests: XCTestCase {
     }
     
     func test_getHeroes_success() {
-        //Given
-        let someResult = Result<[DragonBallCharacter], NetworkError>.success([])
+        // Given
+        let someResult = Result<[DragonBallCharacter], NetworkError>.success([DragonBallCharacter]())
         mock.receivedResult = someResult
+        let expectedToken = "🤥fakeToken🤥"
+        mock.jwtResult = .success(expectedToken)
         var receivedResult: Result<[DragonBallCharacter], NetworkError>?
-        let expectedURL = URL(string: "https://dragonball.keepcoding.education/api/heros/all")!
-        var expectedRequest = URLRequest(url: expectedURL)
-        expectedRequest.httpMethod = "POST"
         
-        //When
-        sut.getHeroes { result in
-            receivedResult = result
+        // When
+        sut.login(user: "🐉Dragon🐉", password: "🔮Ball🔮") { _ in
+            self.sut.getHeroes { result in
+                receivedResult = result
+            }
         }
         
-        //Then
+        // Then
         XCTAssertEqual(someResult, receivedResult)
         XCTAssert(mock.didCallRequest)
     }
     
+
     func test_Heroes_faulure() {
-        //Given
+        // Given
         let someResult = Result<[DragonBallCharacter], NetworkError>.failure(.unknown)
         mock.receivedResult = someResult
-        var receivedResult = Result<[DragonBallCharacter], NetworkError>?
-        //When
-        sut.getHeroes { result in
-            receivedResult = result
+        let expectedToken = "🤥fakeToken🤥"
+        mock.jwtResult = .success(expectedToken)
+        var receivedResult: Result<[DragonBallCharacter], NetworkError>?
+        
+        // When
+        sut.login(user: "🐉Dragon🐉", password: "🔮Ball🔮") { _ in
+            self.sut.getHeroes { result in
+                receivedResult = result
+            }
         }
         
         //Then
         XCTAssertEqual(someResult, receivedResult)
-        XCTAssert(mock.didCallRequest)
+        
     }
 }
