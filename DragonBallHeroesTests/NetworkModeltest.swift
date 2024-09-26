@@ -57,6 +57,7 @@ final class NetworkModelTests: XCTestCase {
         
         //Then
         XCTAssertEqual(someResult, receivedResult)
+        XCTAssert(mock.didCallRequest)
         
     }
 }
