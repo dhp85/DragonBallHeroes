@@ -22,6 +22,8 @@ final class NetworkModelTests: XCTestCase {
         sutTransformations = NetworkModel(client: mockTrasformations)
     }
     
+    // MARK: - Test getHeroes.
+    
     func test_getHeroes_success() {
         // Given
         let someResult = Result<[DragonBallCharacter], NetworkError>.success([DragonBallCharacter]())
@@ -63,6 +65,8 @@ final class NetworkModelTests: XCTestCase {
         XCTAssert(mock.didCallRequest)
         
     }
+    
+    //MARK: - Test getTransformations.
     
     func test_getTransformations_success() {
         

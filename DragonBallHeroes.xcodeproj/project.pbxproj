@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F7201D1D2C9C6BF5001AE95B /* TransforamationsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */; };
-		F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */; };
+		F7201D1E2C9C6BF5001AE95B /* TransformationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D1B2C9C6BF5001AE95B /* TransformationsTableViewController.swift */; };
 		F7201D232C9C769B001AE95B /* TransforamationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */; };
 		F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */; };
 		F738135E2C988510008717D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F738135C2C988510008717D5 /* LoginViewController.swift */; };
@@ -20,7 +20,7 @@
 		F7B47F7F2CA1BE840076FF8F /* DragonBallCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B47F7E2CA1BE840076FF8F /* DragonBallCharacter.swift */; };
 		F7B47F812CA1BF370076FF8F /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B47F802CA1BF370076FF8F /* NetworkModel.swift */; };
 		F7B47F832CA1C1730076FF8F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B47F822CA1C1730076FF8F /* APIClient.swift */; };
-		F7BB13B52CA44A64002033BE /* NetworkModeltest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB13B42CA44A64002033BE /* NetworkModeltest.swift */; };
+		F7BB13B52CA44A64002033BE /* NetworkModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB13B42CA44A64002033BE /* NetworkModelTest.swift */; };
 		F7BB13BD2CA44ABD002033BE /* APIClientProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB13BC2CA44ABD002033BE /* APIClientProtocolMock.swift */; };
 		F7C2619E2C981500006D8289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2619D2C981500006D8289 /* AppDelegate.swift */; };
 		F7C261A02C981500006D8289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C2619F2C981500006D8289 /* SceneDelegate.swift */; };
@@ -45,7 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforamationsTableViewController.swift; sourceTree = "<group>"; };
+		F7201D1B2C9C6BF5001AE95B /* TransformationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformationsTableViewController.swift; sourceTree = "<group>"; };
 		F7201D1C2C9C6BF5001AE95B /* TransforamationsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewController.xib; sourceTree = "<group>"; };
 		F7201D212C9C769B001AE95B /* TransforamationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransforamationsTableViewCell.swift; sourceTree = "<group>"; };
 		F7201D222C9C769B001AE95B /* TransforamationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransforamationsTableViewCell.xib; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		F7B47F802CA1BF370076FF8F /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		F7B47F822CA1C1730076FF8F /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		F7BB13B22CA44A64002033BE /* DragonBallHeroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonBallHeroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BB13B42CA44A64002033BE /* NetworkModeltest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModeltest.swift; sourceTree = "<group>"; };
+		F7BB13B42CA44A64002033BE /* NetworkModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTest.swift; sourceTree = "<group>"; };
 		F7BB13BC2CA44ABD002033BE /* APIClientProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocolMock.swift; sourceTree = "<group>"; };
 		F7C2619A2C981500006D8289 /* DragonBallHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonBallHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C2619D2C981500006D8289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				F7BB13BB2CA44A93002033BE /* Helpers */,
-				F7BB13B42CA44A64002033BE /* NetworkModeltest.swift */,
+				F7BB13B42CA44A64002033BE /* NetworkModelTest.swift */,
 			);
 			path = DragonBallHeroesTests;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 				F738135C2C988510008717D5 /* LoginViewController.swift */,
 				F7C261BE2C9819CB006D8289 /* HeroesListTableViewController.swift */,
 				F79EDBCB2C99714A00C8A78A /* HeroeDetailViewController.swift */,
-				F7201D1B2C9C6BF5001AE95B /* TransforamationsTableViewController.swift */,
+				F7201D1B2C9C6BF5001AE95B /* TransformationsTableViewController.swift */,
 				F77FE5D92C9EC5D100ED297D /* TransformationDetailViewController.swift */,
 			);
 			path = Controller;
@@ -306,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BB13B52CA44A64002033BE /* NetworkModeltest.swift in Sources */,
+				F7BB13B52CA44A64002033BE /* NetworkModelTest.swift in Sources */,
 				F7BB13BD2CA44ABD002033BE /* APIClientProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,7 +320,7 @@
 				F7201D242C9C769B001AE95B /* TransforamationsTableViewCell.swift in Sources */,
 				F7B47F832CA1C1730076FF8F /* APIClient.swift in Sources */,
 				F7B47F812CA1BF370076FF8F /* NetworkModel.swift in Sources */,
-				F7201D1E2C9C6BF5001AE95B /* TransforamationsTableViewController.swift in Sources */,
+				F7201D1E2C9C6BF5001AE95B /* TransformationsTableViewController.swift in Sources */,
 				F7C261BB2C9816F4006D8289 /* HeroesTableViewCell.swift in Sources */,
 				F7C261A02C981500006D8289 /* SceneDelegate.swift in Sources */,
 				F738135E2C988510008717D5 /* LoginViewController.swift in Sources */,
