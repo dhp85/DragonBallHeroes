@@ -72,7 +72,9 @@ private extension LoginViewController {
                 UserDefaults.standard.set(token, forKey: "authToken")
                 self?.navigateMainViewController()
             case .failure:
-                break
+                DispatchQueue.main.async {
+                    self?.showAlert(title: "Error", message: "Correo electrónico o Contraseña incorrectos.")
+                }
             }
         }
     }
