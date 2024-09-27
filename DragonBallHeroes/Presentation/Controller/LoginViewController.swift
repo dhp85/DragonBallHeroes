@@ -16,10 +16,12 @@ final class LoginViewController: UIViewController {
  
     @IBAction func loginButtonTapped(_ sender: Any) {
         guard let email = emailUserUITextField.text, !email.isEmpty else {
+            showAlert(title: "Error", message: "Por favor, ingresa tu correo electronico.")
             return
         }
         
         guard let password = passwordUserUITextField.text, !password.isEmpty else{
+            showAlert(title: "Error", message: "Por favor, ingresa tu contraseña.")
             return
         }
         
@@ -28,10 +30,20 @@ final class LoginViewController: UIViewController {
         
     }
     
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
         
+    }
+    
+   // MARK: - Alerts
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
 
 }
@@ -78,5 +90,6 @@ private extension LoginViewController {
         }
     }
 }
+
 
 
