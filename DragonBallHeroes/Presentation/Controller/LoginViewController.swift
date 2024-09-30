@@ -70,7 +70,14 @@ private extension LoginViewController {
             switch result {
             case let .success(token):
                 UserDefaults.standard.set(token, forKey: "authToken")
-                self?.navigateMainViewController()
+                DispatchQueue.main.async {
+                
+                    if !token.isEmpty {
+                    let heroesListViewController = HeroesListTableViewController()
+                    self?.navigationController?.setViewControllers([heroesListViewController], animated: false)
+                }
+                
+            }
             case .failure:
                 DispatchQueue.main.async {
                     self?.showAlert(title: "Error", message: "Correo electrónico o Contraseña incorrectos.")
@@ -79,18 +86,7 @@ private extension LoginViewController {
         }
     }
     
-    func navigateMainViewController() {
-        
-            DispatchQueue.main.async {
-            
-            if let scene = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-                let heroesListViewController = HeroesListTableViewController()
-                let navigationController = UINavigationController(rootViewController: heroesListViewController)
-                scene.changeRootViewController(to: navigationController)
-            }
-            
-        }
-    }
+
 }
 
 

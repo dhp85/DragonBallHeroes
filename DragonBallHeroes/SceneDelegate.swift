@@ -18,9 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: scene)
-        
+        let navigationController = UINavigationController()
         let loginViewController = LoginViewController()
-        window.rootViewController = loginViewController
+        navigationController.setViewControllers([loginViewController], animated: false)
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
     }
@@ -29,12 +30,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
-extension SceneDelegate {
-    func changeRootViewController(to newRootViewController: UIViewController) {
-        guard let window = self.window else {return}
-        
-        window.rootViewController = newRootViewController
-        window.makeKeyAndVisible()
-        
-    }
-}

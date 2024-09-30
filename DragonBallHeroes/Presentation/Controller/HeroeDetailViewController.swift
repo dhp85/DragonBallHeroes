@@ -14,13 +14,13 @@ final class HeroeDetailViewController: UIViewController {
     @IBOutlet weak var characterLabelUILabel: UILabel!
     
     @IBAction func pushTranformationButton(_ sender: Any) {
-        NetworkModel.shared.getTransformations(for: heroe) { result in
+        NetworkModel.shared.getTransformations(for: heroe) { [weak self] result in
             switch result {
             case let .success(transformations):
                 let sortedTransformations = transformations.sorted { $0.name < $1.name}
                 DispatchQueue.main.async {
                     let transformationListViewController = TransformationsTableViewController(someTransformation: sortedTransformations)
-                    self.navigationController?.pushViewController(transformationListViewController, animated: true)
+                    self?.navigationController?.pushViewController(transformationListViewController, animated: true)
                 }
             case.failure:
                 break
